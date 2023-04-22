@@ -1,0 +1,143 @@
+body{
+  background-color:rgb(49, 47, 47);
+}
+
+.viewtrailer{
+  min-height: 700px;
+  background-size: cover;
+  background-position:center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.boton{
+  min-width: 130px;
+  height: 40px;
+  color: #b2adad;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #343a40;
+  box-shadow: 0 5px #212529;
+  margin-left: 30px;
+}
+
+.boton:hover{
+  box-shadow: 0 3px #212529;
+  top: 1px;
+}
+
+.boton:active{
+  box-shadow: 0 0 #212529;
+  top: 5px;
+}
+
+.reproductor{
+  width: 100%;
+  height: 600px;
+}
+
+.titulo{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  color:rgb(164, 159, 159);
+  
+}
+
+.barraBuscadora{
+  border-radius: 15px;
+  font-size: 15px;
+  border: solid 1.8px;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgba(0,0,0,0.0));
+  padding: 0 16px;
+}
+
+select, textarea{
+  color: white;
+}
+
+textarea:focus, input:focus {
+  color: white;
+}
+
+input::placeholder{
+  color: white;
+}
+
+
+.barraBuscador{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgb(48, 47, 47), rgba(0,0,0,0.0));
+  padding: 16px 0;
+}
+
+
+.buscador{
+  border-radius: 15px ;
+  background: black;
+  color: white;
+}
+
+
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.row img{
+  width: 300px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .10;
+  transition: .5s ease;
+}
+
+.row img:hover{
+  cursor: crosshair;
+  width: 390px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.viewtrailer{
+  display: flex;
+  width: 1500px;
+  height: 300px;
+}
+
+
+.tituloPelicula{
+  color: #fff;
+  margin-left: 30px;
+}
+
+.descripcion{
+  color: #fff;
+  margin-left: 30px;
+}
+
+.descripcioPeliculas{
+  color: grey;
+  margin-left: 60px;
+}
+
+.nosirve{
+  color: white;
+  margin-left: 10px;
+  
+}
