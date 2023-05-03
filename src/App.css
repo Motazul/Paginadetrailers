@@ -141,3 +141,43 @@ input::placeholder{
   margin-left: 10px;
   
 }
+@media screen and (max-width: 767px) {
+  body{
+    background-color:rgb(48, 45, 45);
+
+  }
+  .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .row img{
+    width: 280px;
+    height: 470px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .10;
+    transition: .5s ease;
+    display: flex;
+
+  }
+  
+  .row img:hover{
+    cursor: crosshair;
+    width: 390px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+  .viewtrailer{
+    max-width: 170vw;
+    min-height: 60vh;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: flex-end;
+    
+  }
+  
+}
